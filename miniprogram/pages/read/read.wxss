@@ -1,0 +1,79 @@
+
+
+.read .bg {
+  width: 100%;
+  height: 75rpx;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+}
+
+.read .title {
+  width: 100%;
+  height: 130rpx;
+  line-height: 100rpx;
+  text-align: center;
+  box-sizing: border-box;
+  position: relative;
+  margin: 0 auto;
+  display: flex;
+
+}
+
+.read .title .title_font {
+
+  height: 140rpx;
+  font-size: 40rpx;
+  font-weight: 700;
+
+  line-height: 140rpx;
+  text-align: center;
+  flex: 1;
+}
+
+.read .title .dark {
+  background-color: #2E4E74;
+  color: #F3F9F9;
+}
+
+.read .title .light {
+  background-color: #99BDDD;
+  color: #F3F9F9;
+}
+
+.read .funBox{
+  width: 600rpx;
+  overflow: hidden;
+  box-shadow: 0rpx 0rpx 6rpx 2rpx #ccc;
+  margin: 30rpx auto;
+  padding: 40rpx 50rpx;
+  border-radius: 10rpx;
+  box-sizing: border-box;
+
+}
+
+.read .funItem {
+  width: 650rpx; 
+}
+
+.read .funItem .item{
+   float: left;
+   width: 160rpx;
+   margin-right: 10rpx;
+   margin-bottom: 20rpx;  
+
+}
+
+.read .funItem .item .img{
+   width: 160rpx;
+   height: 80rpx;
+}
+
+.read .funItem .item .item_title{
+  font-size: 24rpx;
+  color: #999;
+  width: 160rpx;
+  text-align: center;
+  height: 60rpx;
+  line-height: 60rpx;
+}

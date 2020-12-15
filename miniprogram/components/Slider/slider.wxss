@@ -1,0 +1,29 @@
+.clearfix::after{
+  content: "";
+  display: block;
+  clear: both;
+  opacity: 0;
+  overflow: hidden;
+  height: 0;
+}
+
+
+.yogi_slider {
+  width: fit-content;
+
+}
+.yogi_slider .yogi_slider_item{
+  float: left;
+  width: 160rpx;
+  margin-right: 10rpx;
+  margin-bottom: 20rpx;  
+}
+/* 图片 */
+.yogi_slider .yogi_slider_item .img{
+    
+}
+
+/* 标题 */
+.yogi_slider .yogi_slider_item .text{
+    
+}

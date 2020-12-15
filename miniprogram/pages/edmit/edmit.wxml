@@ -1,0 +1,135 @@
+<view class="edmit">
+  <!-- 导航 -->
+  <view class="edmit_nav ">
+    <view class="nav_box clearfix" id="navBox" style=" transform: translateX({{movingData.moveX}}px)"
+      bindtouchstart="onBegin" bindtouchmove="onMoving" bindtouchend="onFinshed">
+      <view class="nav_item" wx:for="{{navData}}" wx:key="index" data-index="{{index}}" bindtap="onSelect">
+        <image class="img" src="{{item.img}}"></image>
+        <view class="item_title">{{item.title}}</view>
+      </view>
+    </view>
+  </view>
+  <!-- 编辑区域 -->
+  <view class="edmit_context" style="width:{{viewInfo.w}}px ; height :{{viewInfo.h}}px;">
+    <!-- 日记-->
+    <view class="diary" wx:if="{{index==0}}">
+      <!-- 日记头部-->
+      <view class="diary_title clearfix">
+        <image class="diary_img fl" bindtap="onSelectImage" src="{{diaryData.photoImg}}">
+        </image>
+        <view class="diary_info fl">
+          <view>
+            <view class="weater_text fl">{{diaryData.weatherText}}</view>
+            <image class="weater_img fl" bindtap="onSelectWeather" src="{{diaryData.weaterImg}}">
+            </image>
+          </view>
+          <view>
+            <view class="date_text fl">{{diaryData.time}}</view>
+          </view>
+        </view>
+      </view>
+      <!-- 日记内容 -->
+      <view class="diary_content">
+        <textarea class="diary_emdit" style="height:{{viewInfo.hval}}px" placeholder="请编辑文本内容" maxlength="300"
+          bindinput="getDiaryValue">
+        </textarea>
+
+      </view>
+    </view>
+
+    <!-- 账单 -->
+    <view class="money" wx:if="{{index==1}}">
+      <!-- 标题 -->
+      <view class="money_title">每日账单</view>
+      <!-- 内容 -->
+      <view class="clearfix">
+        <view class="fl">购物清单</view>
+        <view class="fr">10元</view>
+      </view>
+
+      <view class="total clearfix">
+        <view class="fl">总价</view>
+        <view class="fr">10元</view>
+      </view>
+    </view>
+
+    <!-- 植物 -->
+    <view class="plant" wx:if="{{index==2}}">
+      <view class="page-section">
+        <movable-area class="plant_area">
+          <movable-view class="plant_title" direction="all" inertia x="100" y="0"> 植物日记 </movable-view>
+          <movable-view class="plant_img" direction="all" inertia x="130" y="20" bindchange="plantProsition">
+            <image class="small_img"
+              src="cloud://journal-5gemvejh319beda7.6a6f-journal-5gemvejh319beda7-1304343646/item_image/154852z2vdcz5kkkltppzt_07.png" />
+          </movable-view>
+
+          <movable-view class="plant_img" direction="all" inertia x="0" y="30">
+            <image class="small_img"
+              src="cloud://journal-5gemvejh319beda7.6a6f-journal-5gemvejh319beda7-1304343646/item_image/154852z2vdcz5kkkltppzt_06.png" />
+          </movable-view>
+          <movable-view class="plant_img" direction="all" inertia x="60" y="30">
+            <image class="small_img"
+              src="cloud://journal-5gemvejh319beda7.6a6f-journal-5gemvejh319beda7-1304343646/item_image/154852z2vdcz5kkkltppzt_03.png" />
+          </movable-view>
+          <movable-view class="plant_img" direction="all" inertia x="200" y="24">
+            <image class="small_img"
+              src="cloud://journal-5gemvejh319beda7.6a6f-journal-5gemvejh319beda7-1304343646/item_image/154852z2vdcz5kkkltppzt_05.png" />
+          </movable-view>
+          <!-- <movable-view class="plant_img" direction="all" inertia>
+             <view class="clearfix plant_info">
+              <image  class="middle_img fl"  src="cloud://journal-5gemvejh319beda7.6a6f-journal-5gemvejh319beda7-1304343646/item_image/154852z2vdcz5kkkltppzt_13.png"  />
+              <view class="text fr"> 文本介绍</view>
+             </view>
+          </movable-view> -->
+
+
+        </movable-area>
+      </view>
+    </view>
+
+
+    <!-- 购物 -->
+    <view class="pet" wx:if="{{index==3}}">
+      <view> 宠物</view>
+    </view>
+
+
+    <!-- 美食 -->
+    <view class="food" wx:if="{{index==4}}">
+      <view> 美食</view>
+    </view>
+
+
+
+  </view>
+  <!-- 按钮 -->
+  <view class="edmit_control">
+    <view class="emdit_save" bindtap="setDiaryInfo">
+      <image class="edmit_icon edmit_save"
+        src="cloud://journal-5gemvejh319beda7.6a6f-journal-5gemvejh319beda7-1304343646/item_icon/icon_save.png"></image>
+    </view>
+    <view class="emdit_clear">
+      <image class="edmit_icon"
+        src="cloud://journal-5gemvejh319beda7.6a6f-journal-5gemvejh319beda7-1304343646/item_icon/icon_clear.png">
+      </image>
+    </view>
+  </view>
+</view>
+
+<!-- 天气列表 -->
+<view class="weather_list" wx:if="{{isShowWeather}}">
+  <view class="weather_top">
+    <view class="weather_title">天气列表</view>
+    <icon class="weatherBtn" type="cancel" color="#ccc" bindtap="onCloseWeather">
+    </icon>
+  </view>
+
+
+  <view class="weather_item" wx:for="{{weatherList}}" wx:key="index" data-index="{{index}}" bindtap="onChangeWeather">
+    <image class="weather_img" src="{{item.img}}" />
+    <text class="weather_text">{{item.title}}</text>
+  </view>
+
+
+
+</view>

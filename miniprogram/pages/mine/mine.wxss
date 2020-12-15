@@ -1,0 +1,81 @@
+.mine{
+
+}
+.mine .bg{
+  background-color: #2e4e74;
+  /* background-image: linear-gradient(to top , #99BDDD,#99BDDD,#2E4E74 ); */
+    width: 100%;
+    height: 300rpx;
+    position: fixed;
+    top: 0rpx;
+    left: 0rpx;
+    z-index: -1;
+}
+
+.mine .baseInfo{
+    width: 600rpx;
+    background: #fff;
+    position: absolute;
+    top: 160rpx;
+    left: 50%;
+    margin-left: -300rpx;
+    border-radius: 5px;
+    box-sizing: border-box;
+    padding: 40rpx 40rpx 60rpx;
+    box-shadow:  0rpx 0rpx  6rpx 2rpx #ccc;
+}
+
+.mine .baseInfo .img{
+  width: 160rpx;
+  height: 160rpx;
+  background: #F3F9F9;
+  border-radius: 50%;
+  overflow: hidden;
+
+}
+
+.mine .text{
+  width: 65%;
+  padding:0  0 0 40rpx;
+  box-sizing: border-box;
+
+}
+.mine .baseInfo .userMootto,
+.mine .baseInfo .username{
+  height: 80rpx;
+  box-sizing: border-box;
+
+  line-height: 80rpx;
+  font-size: 36rpx;
+
+}
+
+.mine .baseInfo .userMootto{
+  font-size: 28rpx;
+  color: #666;
+  line-height: 40rpx;
+}
+
+/* 功能 */
+.tool_box{
+  width: 600rpx;
+  display: flex;
+  margin: 460rpx auto 0rpx;
+}
+
+.tool_box .tool_item{
+  flex: 1;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.tool_item .img{
+   width: 60rpx;
+   height: 60rpx;
+   
+}
+
+
+
+  
+

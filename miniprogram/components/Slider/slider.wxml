@@ -1,0 +1,13 @@
+<view class="yogi_slider clearfix" style=" transform: translateX({{movingData.moveX}}px)" bindtouchstart="onBegin"
+  bindtouchmove="onMoving" bindtouchend="onFinshed">
+  <view class="yogi_slider_item" wx:for="" >
+    <!-- 图片 -->
+     <image class="img">
+        {{item.image}}
+     </image>
+     <!-- 文字 -->
+     <view class="text">
+        {{item.title}}
+     </view>
+  </view>
+</view>

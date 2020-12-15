@@ -1,0 +1,8 @@
+<view class="popup">
+    <view class="ul ">
+        <view class="li" > 
+            <image class="img"></image>
+            <text class="content"></text>
+        </view>
+    </view>
+</view>

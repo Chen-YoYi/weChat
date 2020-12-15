@@ -1,0 +1,22 @@
+   <!-- 日记头部-->
+   <view class="diary_title clearfix">
+        <image class="diary_img fl" bindtap="{{onSelectImage}}" src="{{photoImg}}">
+        </image>
+        <view class="diary_info fl">
+          <view>
+            <view class="weater_text fl">天气</view>
+            <image class="weater_img fl" bindtap="{{onSelectWeater}}" src="{{weaterImg}}">
+            </image>
+          </view>
+          <view>
+            <view class="date_text fl">{{time}}</view>
+          </view>
+        </view>
+      </view>
+      <!-- 日记内容 -->
+      <view class="diary_content">
+        <textarea class="diary_emdit" placeholder="请编辑文本内容">
+
+
+            </textarea>
+      </view>

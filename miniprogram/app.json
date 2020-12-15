@@ -1,0 +1,43 @@
+{
+  "pages": [
+
+    "pages/edmit/edmit"
+    ,
+    "pages/mine/mine"
+    ,
+    "pages/read/read"
+    
+    
+  ],
+  "window": {
+    "backgroundColor": "#F5F5F5",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#F6f6f6",
+    "navigationBarTitleText": "Bullet Journal",
+    "navigationBarTextStyle": "black"
+  },
+  "sitemapLocation": "sitemap.json",
+  "style": "v2",
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/edmit/edmit",
+        "text": "Edmit",
+        "iconPath": "./images/icon_emdit.png",
+        "selectedIconPath": "./images/icon_emdit.png"
+      },
+      {
+        "pagePath": "pages/mine/mine",
+        "text": "Home",
+        "iconPath": "./images/icon_shop.png",
+        "selectedIconPath": "./images/icon_shop.png"
+      },
+      {
+        "pagePath": "pages/read/read",
+        "text": "Read",
+        "iconPath": "./images/icon_help.png",
+        "selectedIconPath": "./images/icon_help.png"
+      }
+    ]
+  }
+}

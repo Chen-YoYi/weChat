@@ -1,0 +1,52 @@
+<view class="read">
+  <view class="bg">
+
+  </view>
+  <view class="title">
+    <view class="title_font  dark"  > J </view>
+    <view class="title_font  light"  > O </view>
+    <view class="title_font light"  > U </view>
+    <view class="title_font  light"  > R </view>
+    <view class="title_font  light"  > N </view>
+    <view class="title_font  light"  > A </view>
+    <view class="title_font dark"  > L </view>
+  </view>
+  <!-- 手账分类列表 -->
+  <view class="funBox ">
+    <view class="funItem clearfix">
+      <view class="item">
+           <image class="img" src="cloud://journal-5gemvejh319beda7.6a6f-journal-5gemvejh319beda7-1304343646/item_image/daily.png"></image>
+           <view class="item_title">日记</view>
+      </view>
+      <view class="item">
+           <image class="img" src="cloud://journal-5gemvejh319beda7.6a6f-journal-5gemvejh319beda7-1304343646/item_image/food.png"></image>
+           <view class="item_title">美食</view>
+      </view>
+      <view class="item">
+           <image class="img" src="cloud://journal-5gemvejh319beda7.6a6f-journal-5gemvejh319beda7-1304343646/item_image/plant.png"></image>
+           <view class="item_title">植物</view>
+      </view>
+      <view class="item">
+           <image class="img" src="cloud://journal-5gemvejh319beda7.6a6f-journal-5gemvejh319beda7-1304343646/item_image/shop.png"></image>
+           <view class="item_title">宠物</view>
+      </view>
+      <view class="item">
+           <image class="img" src="cloud://journal-5gemvejh319beda7.6a6f-journal-5gemvejh319beda7-1304343646/item_image/daily.png"></image>
+           <view class="item_title">日记</view>
+      </view>
+      <view class="item">
+           <image class="img" src="cloud://journal-5gemvejh319beda7.6a6f-journal-5gemvejh319beda7-1304343646/item_image/food.png"></image>
+           <view class="item_title">美食</view>
+      </view>
+      <view class="item">
+           <image class="img" src="cloud://journal-5gemvejh319beda7.6a6f-journal-5gemvejh319beda7-1304343646/item_image/plant.png"></image>
+           <view class="item_title">植物</view>
+      </view>
+      <view class="item">
+           <image class="img" src="cloud://journal-5gemvejh319beda7.6a6f-journal-5gemvejh319beda7-1304343646/item_image/shop.png"></image>
+           <view class="item_title">宠物</view>
+      </view>
+    </view>
+  </view>
+
+</view>

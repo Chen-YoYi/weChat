@@ -1,0 +1,29 @@
+
+
+.popup{
+   max-width: 200rpx;
+   height: 100%;
+   overflow: hidden;
+}
+
+.popup .ul{
+   
+}
+
+.popup .ul .li{
+    padding: 20rpx;
+     width: 100%;
+     box-sizing: border-box;
+}
+
+.popup .ul .li .img{
+     width: 100%;
+     display: block;
+}
+
+.popup .ul .li .content{
+    text-align: center;
+    font-size: 28rpx;
+    height: 60rpx;
+    line-height: 60rpx;
+}
